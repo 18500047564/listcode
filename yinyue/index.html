@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="zepto.js"></script>
+	<script type="text/javascript" src="widget.js"></script>
+	<script type="text/javascript" src="coffee3.js"></script>
+	
+	<link rel="stylesheet" href="http://css.letvcdn.com/css/201407/11/webapp_174101/global.css"/>
+    <link rel="stylesheet" type="text/css" href="http://css.letvcdn.com/css/201407/22/1159/xiaoshidai.css" />
+<style>
+.Progress1 {
+width: 0%;
+height: 20px;
+background: #8EE18F;
+border-radius: 5px;
+color: #000;
+font-size: 10px;
+line-height: 20px;
+position: relative;
+
+float: left;
+text-align: left;
+}
+.circle {
+width: 15px;
+height: 26px;
+background: #fff;
+border-radius: 50%;
+position: absolute;
+right: -1px;
+top: -3px;
+}
+</style>
+
+</head>
+<body style="background:#666">
+	<section class='u-audio ' data-src='http://g3.letv.cn/73/13/25/wasucn/0/storage/xiaoshidai3.m4a?b=589&mmsid=1488724&tm=1403664900&key=e1d2a49ade70201d50fa627845dcf2d1&platid=3&splatid=302&playid=2&tss=no&vtype=13&cvid=499228608110&sign=mb&dname=mobile&tag=mobile&termid=2&pay=0&ostype=android&hwtype=iphone&format=0&expect=1'>
+        <p id='coffee_flow' class="btn_audio">
+           
+            <span class='css_sprite01 audio_open'></span>
+        </p>
+    </section>
+
+
+  <!-- <div style="height: 20px;width:90%;margin-top:10px;float:left;text-align:left;background: #fff;
+border-radius: 5px;"><div class="Progress1" id="j-slider" style="width: 88%;"><span class="circle"></span></div></div>-->
+<script type="text/javascript">
+	
+	// 音符飘逸
+		$('#coffee_flow').coffee({
+			steams				: ["<img src='http://i0.letvimg.com/img/201407/03/1456/audio_widget_01@2x.png' />","<img src='http://i0.letvimg.com/img/201407/03/1456/audio_widget_01@2x.png' />"], 
+			steamHeight			: 100,
+			steamWidth			: 44 ,
+			show:false
+		})
+		//$.fn.coffee.start();
+ 	 	
+
+
+
+</script>
+
+
+</body>
+</html>

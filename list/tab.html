@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="tab.js"></script>
+	<script type="text/javascript" src="zepto.js"></script>
+	<style type="text/css">
+	        li {display:inline-block;}
+			.active {display:inline-block;}
+			.tab li, #nation-card div {display:none;}
+			#nation-card .active {display:block;}
+	</style>
+</head>
+<body>		
+	<ul id="nation-list">
+		<li class="j-tab active">台湾<span>TaiWan</span></li>
+		<li class="j-tab">新西兰<span>Newzland</span></li>
+		<li class="j-tab">新加坡<span>Singabo</span></li>
+	</ul>
+	<div id="nation-card">
+		<div class="j-card active">台湾111</div>
+		<div class="j-card">新西兰222</div>
+		<div class="j-card">新加坡333</div>
+	</div>
+
+	<script type="text/javascript">
+           new Tab({
+				tabCont: '#nation-list',
+				tabClass: 'j-tab',
+				tabActiveClass: 'active',
+				cardCont: '#nation-card',
+				cardClass: 'j-card',
+				cardActiveClass: 'active',
+				switchEvent: 'click', //或者 mouseover
+				onSwitch: function(index, $tab, $card){
+					console.log(index, $tab.text());
+				}
+			});
+	</script>
+</body>
+</html>
